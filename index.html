@@ -233,6 +233,13 @@
                 if (x.checked) y.document.write('<li>' + x.value + "</li>");
             }
             y.document.write("</UL>" + "<br/>" + document.anketa.com.value);
+             let formData = new FormData(document.forms.anketa);
+
+
+            let xhr = new XMLHttpRequest();
+            xhr.open("POST", "https://github.com/kostendzu/projectX2/edit/main/clientsDB.xml");
+            xhr.send(formData);
+            xhr.onload = () => console.log(xhr.response);
         }
 
 
