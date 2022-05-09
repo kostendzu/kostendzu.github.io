@@ -3,4 +3,17 @@
 	<class> Люкс </class>
 	<price> 100$</price>
 	<description> Бла - бла - бла </description>
+	
+<cors domain="/configurations/simple"
+    allowedOrigins="openliberty.io"
+    allowedMethods="GET"
+    allowCredentials="true"
+    exposeHeaders="MyHeader"/>
+
+<cors domain="/configurations/preflight"
+    allowedOrigins="*"
+    allowedMethods="OPTIONS, DELETE"
+    allowCredentials="true"
+    allowedHeaders="MyOwnHeader1, MyOwnHeader2"
+    maxAge="10"/>
 </root>
