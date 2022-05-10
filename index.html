@@ -159,11 +159,11 @@
   .done(function(data){
     // parse the xml
     data = $.parseXML(data);
-    alert($(data).find("class").length)
+    console.log($(data).find("class").length)
     $(data).find("class").each(
         function(index, element){
             let field = $(element).find("class")
-            alert(field.text())
+            console.log(field.text())
             let newblock = document.createElement("div")
             newblock.classList.add("plate");
             newblock.innerHTML = "<span>YAY</span>"
