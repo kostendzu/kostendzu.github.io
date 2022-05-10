@@ -156,7 +156,7 @@
     <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script>
          $.get('https://raw.githubusercontent.com/kostendzu/kostendzu.github.io/main/clientDB.xml')
-  $.done(function(data){
+  .done(function(data){
     // parse the xml
     data = $.parseXML(data);
     alert($(data).find("class").length)
