@@ -4,6 +4,14 @@
 	<price> 100$</price>
 	<description> Бла - бла - бла </description>
 	
+	<class> Полулюкс </class>
+	<price> 70$</price>
+	<description> Бла - бла - бла </description>
+	
+	<class> Стандарт </class>
+	<price> 40$</price>
+	<description> Бла - бла - бла </description>
+	
 <cors domain="/configurations/simple"
     allowedOrigins="openliberty.io"
     allowedMethods="GET"
