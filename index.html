@@ -151,9 +151,12 @@
         <input id="arr" type="button" />
 
     </div>
-    <script> 
-       $.get('https://raw.githubusercontent.com/kostendzu/kostendzu.github.io/main/clientDB.xml')
-  .done(function(data){
+ 
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script>
+         $.get('https://raw.githubusercontent.com/kostendzu/kostendzu.github.io/main/clientDB.xml')
+  $.done(function(data){
     // parse the xml
     data = $.parseXML(data);
     alert($(data).find("class").length)
@@ -167,10 +170,6 @@
             document.getElementsByClassName("mmm")[0].appendChild(newblock);
         }
     )
-    </script>
-    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
-    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-    <script>
         let j = -1;
         let i = -1;
         const arrBack = [{ name: "Молодость", add: "url(молодость_фонк.png)" }, { name: "Юность", add: "url(фон1.png)" }];
