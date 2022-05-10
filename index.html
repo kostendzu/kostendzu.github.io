@@ -151,6 +151,23 @@
         <input id="arr" type="button" />
 
     </div>
+    <script> 
+       $.get('https://raw.githubusercontent.com/kostendzu/kostendzu.github.io/main/clientDB.xml')
+  .done(function(data){
+    // parse the xml
+    data = $.parseXML(data);
+    alert($(data).find("class").length)
+    $(data).find("class").each(
+        function(index, element){
+            let field = $(element).find("class")
+            alert(field.text())
+            let newblock = document.createElement("div")
+            newblock.classList.add("plate");
+            newblock.innerHTML = "<span>YAY</span>"
+            document.getElementsByClassName("mmm")[0].appendChild(newblock);
+        }
+    )
+    </script>
     <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script>
