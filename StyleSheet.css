@@ -651,4 +651,11 @@ h1 {
     cursor: pointer;
     background-repeat: no-repeat;
 }
+input[type=checkbox], input[type=radio] {
+    width: 1vw;
+    height: 1vw;
+}
 
+h2{
+    text-align: center;
+}
