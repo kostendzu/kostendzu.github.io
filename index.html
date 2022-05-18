@@ -2,28 +2,27 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <meta max-width="device-width" name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Сеть Санаториев "Время для жизни"</title>
     <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/sunny/jquery-ui.css">
     <link rel="stylesheet" href="StyleSheet.css">
 
 </head>
 
 <body>
-    <XML ID="dsoBook" SRC="clientDB.xml"></XML>
-    <div class="fon">
+        <div class="fon">
 
         <div class="darkness">
             <h1> Добро пожаловать в "ЮНОСТЬ" </h1>
             <div id="cc" class="wrapper">
-                <svg class="menu_button" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <g stroke="null" id="svg_5" stroke-width="4">
-                        <path id="svg_5" stroke="#000" fill="#fff" opacity="undefined" d="m1.94159,1.7068l63.66656,0l0,46.99993l-63.66656,0l0,-46.99993z" id="svg_1" />
-                        <path id="svg_5" stroke="#000" fill="none" opacity="undefined" d="m13.42924,12.25002l40.82964,0" id="svg_2" />
-                        <line id="svg_5" stroke="#000" fill="none" x1="13.42924" y1="24.95271" x2="55.64294" y2="24.95271" id="svg_3" />
-                        <line id="svg_5" stroke="#000" fill="none" x1="13.42769" y1="38.18434" x2="56.33652" y2="37.76159" id="svg_4" />
-                    </g>
-                </svg>
+                    <svg class="menu_button" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <g stroke="null" id="svg_5" stroke-width="4">
+                            <path id="svg_5" stroke="#000" fill="#fff" opacity="undefined" d="m1.94159,1.7068l63.66656,0l0,46.99993l-63.66656,0l0,-46.99993z" id="svg_1" />
+                            <path id="svg_5" stroke="#000" fill="none" opacity="undefined" d="m13.42924,12.25002l40.82964,0" id="svg_2" />
+                            <line id="svg_5" stroke="#000" fill="none" x1="13.42924" y1="24.95271" x2="55.64294" y2="24.95271" id="svg_3" />
+                            <line id="svg_5" stroke="#000" fill="none" x1="13.42769" y1="38.18434" x2="56.33652" y2="37.76159" id="svg_4" />
+                        </g>
+                    </svg>
 
 
                 <div id="cc" class="menu__wrapper">
@@ -99,7 +98,7 @@
                         <input type="text" value='Имя' />
                         <p>
                             Количество человек <select>
-                                <option checked> 1 </option>
+                                <option selected> 1 </option>
                                 <option> 2 </option>
                                 <option> 3 </option>
                                 <option> 4 </option>
@@ -110,9 +109,9 @@
                         <p>Дата заезда: <input type="text" id="datepicker" size="30"></p>
                         <p>Дата выезда: <input type="text" id="datepicker1" size="30"></p>
                         <p> Класс номера </p>
-                        <input type='radio' name='s' value='Single' /> Single
-                        <input type='radio' name='s' value='Lux' /> Lux
-                        <input type='radio' name='s' value='Appartments' /> Appartments
+                        <input type='radio' name='s' value='Стандарт' /> Стандарт 
+                        <input type='radio' name='s' value='Люкс' /> Люкс
+                        <input type='radio' name='s' value='Аппартаменты' /> Аппартаменты
                         <p> Дополнительно: </p>
                         <input name='rad' value='Детская кроватка' type="checkbox" /> Детская кроватка
                         <input name='rad' value='Завтраки' type="checkbox" />Завтраки
@@ -159,7 +158,7 @@
             </div>
         </div>
         <div class="service">
-             <img src="exit_grey.svg"/> 
+             <img  src="exit_grey.svg"/> 
             <div class="SPA">
                 <img src="SPA.jpg" />
                 <p> СПА </p>
@@ -396,6 +395,15 @@
             $(".service").css("display", "flex");
             return false;
         });
+        $(".service>img").click(function () {
+            $(".menu_button").css("display", "block");
+            $("#arr").css("display", "block");
+            $(".gallery").css("display", "none");
+            $(".service").css("display", "none");
+            $(".darkness").css("opacity", "1");
+            $(".darkness").css("background-color", "transparent");
+        });
+
 
        
     </script>
